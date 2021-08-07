@@ -1,0 +1,33 @@
+<!-- 用户 openid -->
+  <view class="userinfo">
+    <button   
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+    <view>
+      <text class="username">{{userInfo.nickName}}</text>
+    </view>
+  </view>
+
+  <!-- 购物车 -->
+  <view class="uploader">
+    <view class="uploader-text" bindtap='toCart'>
+      <text>购物车</text>
+    </view>
+  </view>
+
+  <!-- 收藏夹 -->
+  <view class="uploader">
+    <view class="uploader-text" bindtap='toCollect'>
+      <text>收藏夹</text>
+    </view>
+  </view>
+
+  <!-- 关于我们 -->
+  <view class="uploader">
+    <view class="uploader-text">
+      <text>关于我们</text>
+    </view>
+  </view>

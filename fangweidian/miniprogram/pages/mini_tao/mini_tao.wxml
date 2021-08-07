@@ -1,0 +1,43 @@
+ <view class="mini_tao_context">
+   <view class="search_view" >
+   <image class="search_icon" src='/images/comment_search_icon.png'></image>
+     <input class="search_box" type='text'></input>
+   </view>
+    <view class="list_view" wx:for="{{shoplist}}">
+      <view class='item_view' bindtap='detail_' data-id='{{goodlist[index]._id}}'>
+        <div class="row shop">
+          <div>
+            <image class="shop_pic" src='{{item.imgpath}}'></image>
+          </div>
+          <div class="shop_name_div">
+             <text class="shop_name">{{item.name}}<br/><br/></text>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="goods_context" >
+            <text>{{goodlist[index].context}}</text>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <image class="goods_pic" src='{{goodlist[index].imgpath1}}'></image>
+          </div>
+          <div>
+            <image class="goods_pic" src='{{goodlist[index].imgpath2}}'></image>
+          </div>
+          <div>
+            <image class="goods_pic" src='{{goodlist[index].imgpath3}}'></image>
+          </div>
+        </div>
+
+
+        <div class="button_div">
+            <button class="button_group">分享</button>
+            <button  class="button_group">评论</button>
+            <button  class="button_group">点赞</button>
+        </div>
+      </view>
+    </view>
+</view>

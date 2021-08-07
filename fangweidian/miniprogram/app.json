@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/mini_tao/mini_tao",
+    "pages/user/user",
+    "pages/cart/cart",
+    "pages/collection/collection",
+    
+    "pages/good_detail/good_detail",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi"
+  ],
+  "window": {
+    "backgroundColor": "#5F9EA0",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5F9EA0",
+    "navigationBarTitleText": "仿微店",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/mini_tao/mini_tao",
+        "text": "微淘",
+        "selected": true
+      }, 
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
+  

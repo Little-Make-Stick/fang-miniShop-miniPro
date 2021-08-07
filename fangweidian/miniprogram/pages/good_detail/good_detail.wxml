@@ -1,0 +1,42 @@
+<!-- banner -->
+<swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+  <swiper-item>
+      <image src="{{good_[0].imgpath1}}"></image>
+  </swiper-item>
+  <swiper-item>
+      <image src="{{good_[0].imgpath2}}"></image>
+  </swiper-item>
+  <swiper-item>
+      <image src="{{good_[0].imgpath3}}"></image>
+  </swiper-item>
+</swiper>
+<scroll-view scroll-y="true">
+  <view class="detail">
+    <text class="title">{{good_[0].context}}</text>
+    <text class="price">￥{{good_[0].price}}</text>
+  </view>
+  <view class="separate"></view>
+  <!-- sku选择 -->
+  
+  <view class='type'>
+  <text class='type_label'>请选择规格</text>
+  <text class="type_btn" value="月夜森林系列">{{good_[0].type}}</text>
+  </view>
+  <view class="separate"></view>
+  <text class="text-label">商品评价</text>
+  <text class="text-remark">东西还可以，好评~</text>
+  <view class="separate"></view>
+  <text>商品详情</text>
+  <block wx:for-items="{{detailImg}}" wx:key="name">
+    <image class="image_detail" src="{{item}}" />
+  </block>
+  <view class="temp"></view>
+</scroll-view>
+<!-- 底部悬浮栏 -->
+<view class="detail-nav">
+  <image bindtap="toCar" src="/images/comment_cart_icon.png" />
+  <view class="line_nav"></view>
+  <image bindtap="addLike" src="{{isLike?'/images/comment_collect_icon.png':'/images/comment_collect_false_icon.png'}}" />
+  <button class="button-green" bindtap="addCar" formType="submit">加入购物车</button>
+  <button class="button-red" bindtap="immeBuy" formType="submit">立即购买</button>
+</view>

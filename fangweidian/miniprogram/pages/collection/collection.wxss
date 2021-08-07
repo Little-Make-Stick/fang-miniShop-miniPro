@@ -1,0 +1,31 @@
+/* pages/collection/collection.wxss */
+page{
+  background-color: 	#F5F5F5;
+}
+view{
+  background-color: white;
+  display: inline;
+}
+.collect-item{
+  width: 48%;
+  height: 520rpx;
+  margin: 1%;
+  float: left;
+}
+.pic{
+  width: 340rpx;
+  height: 340rpx;
+}
+.context{
+  font-size: 30rpx;
+  display: block;
+}
+.price{
+  color: red;
+}
+.footer{
+  display: block;
+  color: #CCCCCC;
+  text-align: center;
+  font-size: 28rpx;
+}

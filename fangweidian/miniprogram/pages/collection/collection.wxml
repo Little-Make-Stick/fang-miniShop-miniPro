@@ -1,0 +1,12 @@
+<!--pages/collection/collection.wxml-->
+<view class='collect-list' wx:for="{{collect}}">
+  <view class='collect-item' bindtap='detail_' data-id='{{item.good_id}}'>
+    <image class="pic" src='{{item.pic}}'></image>
+    <text class="context">{{item.context}}</text>
+    <text class="price">￥{{item.price}}</text>
+  </view>
+</view>
+
+<view class='footer'>
+  <text class='footer_text'>-----再去收藏一些吧，主人-------</text>
+</view>
